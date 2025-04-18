@@ -1,10 +1,10 @@
 ﻿# About This Tool
 
-This is a command-like tool that will take either:
+This is a command-like tool that will take either a:
 
 * `M3U` [playlist](https://en.wikipedia.org/wiki/M3U)
   * Many audio players can create `M3U` playists, including FooBar and VLC Player.
-* A text file containing a list of filenames.
+* text file containing a list of filenames
 
 ... and it will convert that file to ...
 
@@ -25,9 +25,12 @@ If this tool proves to be popular I may refine it. If you'd like to express inte
 
 # Installation
 
-(to be filled in)
+You have a two choices here:
 
-# Usage
+1. Download the `win64` executable I created (Windows users only) by clicking on the [Releases](https://github.com/d16-nichevo/FoundryPlaylistConverter/releases) for this project.
+1. Compile it yourself.
+
+# Generating the JSON File
 
 Using the command line is out-of-scope for this readme. If you need help, there are guides on the internet. [Here is one.](https://www.freecodecamp.org/news/how-to-use-the-cli-beginner-guide/)
 
@@ -67,7 +70,7 @@ The `userdataroot` argument is as per this value, but with `/Data` added. For ex
 
 * `C:/Documents/Foundry App Data/Data`
 
-# `playlist` Argument
+## `playlist` Argument
 
 This is the full path to the file to read from. (It may be possible to use a relative path, I didn't test.)
 
@@ -90,6 +93,22 @@ So if your `userdataroot` is `C:/Documents/Foundry App Data/Data`:
 This is simply the full path to where you want the `JSON` file to be written.
 
 Ideally you should name the file with a `.JSON` extension, but you don't have to.
+
+# Importing the JSON File
+
+Follow these steps:
+
+1. Launch Foundry VTT.
+1. Open your Game World.
+1. Navigate to the [Playlist tab](https://foundryvtt.com/article/playlists/).
+1. Create a new playlist. Give it any old name for now.
+1. Right-click the playlist you created.
+1. Select **Import Data**.
+1. Select **Choose File**.
+1. Find and select the JSON file you created earlier.
+1. Click **Import**.
+1. You audio tracks are imported!
+1. You can work with the playlist as normal from here out: rename it, add or remove tracks, etc.
 
 # Contact the Author
 
